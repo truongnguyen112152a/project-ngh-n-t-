@@ -3,202 +3,169 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    font-family: "Roboto", sans-serif;
+@media only screen and (max-width: 768px){
+    .header-top,.header-bottom{
+        display: none;
+    }
+    .search{
+        display: none;
+    }
+    .hide-heart{
+        display: none;
+    }
+    .logo{
+        text-align: center;
+    }
+    .product{
+        text-align: center;
+    }
+    .justify-icon,.justify-pro{
+        justify-content: center;
+    }
 }
-.header{
-    height: 200px;
-    background: rgb(28, 28, 37);
-    color: white;
+@media only screen and (min-width: 768px){
+    .icon-menu{
+        display: none;
+    }
+    .search{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .justify-icon{
+        justify-content: flex-end;
+    }
 }
-.content{
-    height: 1200px;
-    background: wheat;
-}
-.footer{
-    background: rgb(28, 28, 37);
-    color: white;
-    
-}
-.address{
+.header-top{
     height: 40px;
-    padding: 0 100px;
-    display: flex;
-    justify-content: space-between;
-}
-.phone{
-    font-size: 0.9em;
-    
-}
-.phone a{
-    text-decoration: none;
-    color: white;
-}
-.street{
-    margin-right: 20px;
-    font-size: 0.9em;
-    
-}
-.icon i{
-    text-align: center;
     line-height: 40px;
-    margin-right: 10px;
+    border-bottom: 1px solid rgb(153, 150, 146);
+
 }
-.add,.icon{
-    display: flex;
-    text-align: center;
-    line-height: 40px;
-}
-.logo-icon{
-    font-size: 80px;
-}
-.logo{
+.header-center{
     height: 100px;
-    padding: 0 100px;
-    font-size: 30px;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
     line-height: 100px;
-    border-top: 1px solid rgb(133, 127, 117);
-    border-bottom: 1px solid rgb(133, 127, 117);
 }
-.menu{
+.header-bottom{
     height: 60px;
-    display: flex;
-    justify-content: center;
+    line-height: 60px;
+    border-top: 1px solid rgb(153, 150, 146);
 }
-.search{
-    display: flex;
-    align-items: center;
-    
-}
-.search input{
-    width: 420px;
-    height: 100%;
-    padding-left: 10px;
-    border: none;
-    border-radius: 7px 0 0 7px;
-}
-.search button{
-    font-size: 20px;
-    color: white;
-    border: none;
-    width: 70px;
-    height: 100%;
-    background: rgb(93, 190, 207);
-    border-radius: 0 7px 7px 0;
+.header-top,.header-center,.header-bottom{
+    padding: 0 5%;
+    background: rgb(61, 61, 66);
+    color: rgb(247, 244, 239);
 }
 .search-icon{
-    display: flex;
-    border-radius: 7px;
-    height: 45%;
-    background: white;
-    background: rgb(93, 190, 207);
+    height: 40%;
+    width: 80%;
+    line-height: initial;
 }
-.cart i{
+.search-icon input{
+    width: 80%;
+    height: 100%;
+    padding: 0 10px;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    float: left;  
+}
+.search-icon button{
+    width: 20%;
+    height: 100%;
+    padding: 0 10px;
+    border-radius: 0 10px 10px 0; 
+    border: none; 
+    background: rgb(98, 119, 86);
+    color: rgb(247, 244, 239);
+}
+input:focus{
+    outline: none;
+}
+button:focus{
+    outline: none;
+}
+.header-bottom li{
+    list-style: none;
+    margin-right: 50px;
+}
+.header-bottom a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    color: rgb(247, 244, 239);
+}
+.header-bottom ul{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.header-bottom a:hover{
+    color: rgb(189, 141, 52);
+    text-decoration: underline;
+}
+.content{
+    height: 1000px;
+    background: wheat;
+}
+.footer-top,.footer-bottom{
+    padding: 50px 5%;
+    background: rgb(61, 61, 66);
+    color: rgb(247, 244, 239);
+}
+.footer-top{
+    border-bottom: 1px solid rgb(153, 150, 146);
+}
+.block{
+    margin-top: 30px;
+}
+.connect{
+    display: flex;
+    margin-bottom: 6px;
+}
+.connect div{
     margin-right: 10px;
 }
-.menu ul{
-    display: flex;
-    height: 100%; 
-    list-style: none;
-    
-}
-.menu a{
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-    font-size: 0.8em;
-    font-weight: bold;
-}
-.menu li{
-    width: 100px;
-    height: 100%;
-    margin: 0 20px;
+.connect-icon div{
+    font-size: 20px;
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 30px;
     text-align: center;
-    line-height: 60px;
-    
 }
-.section-up{
-    display: flex;
-    height: 400px;
-    padding: 70px 100px 0 100px;
+.content-menu li{
+    list-style: none;
+    margin-bottom: 10px;
 }
-.part{
-    width: 25%;
-    padding: 0 20px;
+.content-menu ul{
+    margin: 0;
+    padding: 0;
 }
 .header-menu{
-    text-transform: uppercase;
+    margin-bottom: 10px;
     font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 20px;
+    text-transform: uppercase;
 }
-.part ul li{
-    height: 20px;
-    
-}
-ul{
-    list-style: none;
-}
-.content-menu div{
-    display: flex;
-}
-.content-menu ul li{
-    margin-bottom: 15px;
-}
-.content-menu ul li a{
-    color: white;
+.content-menu a{
+    text-transform: none;
     text-decoration: none;
+    color: rgb(247, 244, 239);
 }
-.section-down{
-    height: 100px;
-    border-top: 1px solid rgb(133, 127, 117);
-    display: flex;
-    justify-content: space-between;
-    line-height: 100px;
-    padding: 0 100px;
+.content-menu a:hover{
+    color: rgb(189, 141, 52);
 }
 .product{
-    display: flex;   
+    display: flex;
+    line-height: 30px;
+    margin-bottom: 20px;
 }
 .product div{
     margin-right: 20px;
 }
-.canna{
-    color: green;
-}
 .font-icon{
     font-size: 30px;
 }
-.part-add{
-    margin-bottom: 15px;
-}
-.part-add i{
-    margin-right: 10px;
-}
-.icon-size div{
-    width: 35px;
-    height: 35px;
-    font-size: 20px;
-    background: rgb(28, 42, 231);
-    color: white;
-    border-radius: 50%;
-    justify-content: center;
-    margin-right: 10px;
-}
-.icon-size div i{
-    margin: 0;
-    line-height: 35px;
-}
-.app{
-    margin-bottom: 15px;
-}
-.gg-app{
-    font-size: 30px;
-}
-.gg-app i{
-    margin-right: 10px;
-    color: skyblue;
+.canna{
+    color: green;
 }

@@ -1,47 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./vendor/fontawesome-free-5.15.1-web/fontawesome-free-5.15.1-web/css/all.min.css">
     <link rel="stylesheet" href="./vendor/css/truongto.css">
 </head>
+
 <body>
     <div class="header">
-        <div class="address">
-            <div class="add">
-                <div class="street">
-                    <i class="fas fa-map-marker"></i>
-                    214-C3 Nguyễn Xiển,P.Hạ Đình,Q.Thanh Xuân,TP.Hà Nội
+        <div class="header-top">
+            <div class="row">
+                <div class="street col-md-9 fs-6">
+                    <i class="fas fa-map-marker mx-1"></i>
+                    214-C3 Nguyễn Xiển-Thanh Xuân-Hà Nội
+                    <i class="fas fa-phone-alt mx-1"></i>
+                    0988666688
                 </div>
-                <div class="phone">
-                    <i class="fas fa-phone-alt"></i>
-                    <a href="">0988666688</a>
+                <div class="icon col-md-3 text-end">
+                    <i class="fab fa-facebook-f mx-1"></i>
+                    <i class="fab fa-instagram mx-1"></i>
+                    <i class="fab fa-twitter mx-1"></i>
                 </div>
-            </div>
-            <div class="icon">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter"></i>
             </div>
         </div>
-        <div class="logo">
-            <div class="logo-icon">
-                <i class="fab fa-apper"></i>
-            </div>
-            <div class="search">
-                <div class="search-icon">
-                    <input type="text" placeholder="Tìm kiếm...">
-                    <button><i class="fas fa-search"></i></button>  
-                </div>    
-            </div>
-            <div class="cart">
-                <i class="far fa-heart"></i>
-                <i class="fas fa-shopping-cart"></i>
+        <div class="header-center">
+            <div class="row">
+                <div class="icon-menu col-2 fs-3"><i class="fas fa-bars"></i></div>
+                <div class="logo col-8 col-md-3">
+                    <img width="200" height="70"
+                        src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/logo-mona-2.png"
+                        class="header-logo-dark" alt="Đồng Hồ Hải Triều">
+                </div>
+                <div class="search col-md-6">
+                    <div class="search-icon">
+                        <input class="width-search hide-heart" type="text" placeholder="Tìm kiếm...">
+                        <button class="width-search hide-heart"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                <div class="cart col-2 col-md-3 text-end  fs-3">
+                    <i class="far fa-heart mx-1 hide-heart"></i>
+                    <i class="fas fa-shopping-cart mx-1"></i>
+                </div>
             </div>
         </div>
-        <div class="menu">
+        <div class="header-bottom">
             <ul>
                 <li><a href="">Trang chủ</a></li>
                 <li><a href="">Giới thiệu</a></li>
@@ -51,85 +61,85 @@
             </ul>
         </div>
     </div>
-    <div class="content"></div> <!-- Ae thay phần của mình vào đây nhé -->
+    <div class="content"></div><!--Ae thêm phần của mình vào đây-->
     <div class="footer">
-        <div class="section-up">
-            <div class="section-add part">
-                <div class="header-menu">Thông tin liên hệ</div>
-                <div class="content-menu">
-                    <div class="part-add">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>214 C3,Nguyễn Xiển,Thanh Xuân,Hà Nội</p>
+        <div class="footer-top">
+            <div class="row">
+                <div class="block col-12 col-md-4 col-lg-3">
+                    <div class="header-menu fs-4">Thông tin liên hệ</div>
+                    <div class="connect">
+                        <div><i class="fas fa-map-marker-alt"></i></div>
+                        <div>214 C3,Nguyễn Xiển,Thanh Xuân,Hà Nội</div>
                     </div>
-                    <div class="part-add">
-                        <i class="fas fa-phone-alt"></i>
-                        <span>0988666699 hoặc 0899996666</span>
+                    <div class="connect">
+                        <div><i class="fas fa-phone-alt"></i></div>
+                        <div>0988666699 hoặc 0899996666</div>
                     </div>
-                    <div class="part-add">
-                        <i class="far fa-envelope"></i>
-                        <span>donhoapper@gmail.com</span>
+                    <div class="connect">
+                        <div><i class="far fa-envelope"></i></div>
+                        <div>donhoapper@gmail.com</div>
                     </div>
-                    <div class="part-add">
-                        <i class="fab fa-skype"></i>
-                        <span>donghoapper</span>
+                    <div class="connect">
+                        <div><i class="fab fa-skype"></i></div>
+                        <div>donghoapper</div>
                     </div>
-                    <div class="part-add icon-size">
-                        <div><i class="fab fa-facebook-f"></i></div>
-                        <div><i class="fab fa-instagram"></i></div>
-                        <div><i class="fab fa-twitter"></i></div>
-                        <div><i class="fas fa-rss"></i></div>
-                        <div><i class="fab fa-linkedin-in"></i></div>
+                    <div class="connect connect-icon">
+                        <div class="bg-primary"><i class="fab fa-facebook-f"></i></div>
+                        <div class="bg-primary"><i class="fab fa-instagram"></i></div>
+                        <div class="bg-info"><i class="fab fa-twitter"></i></div>
+                        <div class="bg-danger"><i class="fas fa-rss"></i></div>
+                        <div class="bg-warning"><i class="fab fa-linkedin-in"></i></div>
                     </div>
-                </div> 
-            </div>
-            <div class="section-link part">
-                <div class="header-menu">Liên kết</div>
-                <div class="content-menu">
-                    <ul>
-                        <li><a href="">Giới thiệu</a></li>
-                        <li><a href="">Đồng hồ nam</a></li>
-                        <li><a href="">Đồng hồ nữ</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Liên hệ</a></li>
-                    </ul>
                 </div>
-            </div>
-            <div class="section-support part">
-                <div class="header-menu">Hỗ trợ</div>
-                <div class="content-menu">
-                    <ul>
-                        <li><a href="">Hướng dẫn mua hàng</a></li>
-                        <li><a href="">Hướng dẫn thanh toán</a></li>
-                        <li><a href="">Chính sách bảo hành</a></li>
-                        <li><a href="">Chính sách đổi trả</a></li>
-                        <li><a href="">Tư vấn mua hàng</a></li>
-                    </ul>
+                <div class="block col-6 col-md-4 col-lg-3">
+                    <div class="header-menu fs-4">Liên kết</div>
+                    <div class="content-menu">
+                        <ul>
+                            <li><a href="">Giới thiệu</a></li>
+                            <li><a href="">Đồng hồ nam</a></li>
+                            <li><a href="">Đồng hồ nữ</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Liên hệ</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="section-download part">
-                <div class="header-menu">Tải ứng dụng trên</div>
-                <div class="app">
+                <div class="block col-6 col-md-4 col-lg-3">
+                    <div class="header-menu fs-4">Hỗ trợ</div>
+                    <div class="content-menu">
+                        <ul>
+                            <li><a href="">Hướng dẫn mua hàng</a></li>
+                            <li><a href="">Hướng dẫn thanh toán</a></li>
+                            <li><a href="">Chính sách bảo hành</a></li>
+                            <li><a href="">Chính sách đổi trả</a></li>
+                            <li><a href="">Tư vấn mua hàng</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block col-12 col-lg-3">
+                    <div class="header-menu fs-4">Tải ứng dụng trên</div>
                     <p>Hãy tải Apper Watch ngay trên Google Play & App Store</p>
-                </div>
-                <div class="gg-app">
-                    <i class="fab fa-google-play"></i>
-                    <i class="fab fa-app-store-ios"></i>
+                    <div class="app fs-1">
+                        <i class="fab fa-google-play"></i>
+                        <i class="fab fa-app-store-ios"></i>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="section-down">
-            <div class="product">
-                <div>Bản quyền thuộc về</div>
-                <div class="font-icon canna"><i class="fas fa-cannabis"></i></div>  
+        <div class="footer-bottom">
+            <div class="row">
+                <div class="product justify-pro col-12 col-md-6">
+                    <div>Bản quyền thuộc về</div>
+                    <div class="canna fs-4"><i class="fas fa-cannabis"></i></div>
+                </div>
+                <div class="product justify-icon col-12 col-md-6">
+                    <div class="font-icon"><i class="fab fa-cc-visa"></i></div>
+                    <div class="font-icon"><i class="fab fa-cc-mastercard"></i></div>
+                    <div class="font-icon"><i class="fab fa-cc-paypal"></i></div>
+                    <div class="font-icon"><i class="fas fa-camera-retro"></i></div>
+                    <div class="font-icon"><i class="fas fa-eye"></i></div>
+                </div>
             </div>
-            <div class="product">
-                <div class="font-icon"><i class="fab fa-cc-visa"></i></div>
-                <div class="font-icon"><i class="fab fa-cc-mastercard"></i></div>
-                <div class="font-icon"><i class="fab fa-cc-paypal"></i></div>
-                <div class="font-icon"><i class="fas fa-camera-retro"></i></div>
-                <div class="font-icon"><i class="fas fa-eye"></i></div>
-            </div>
-        </div>  
+        </div>
     </div>
 </body>
 </html>
