@@ -4,16 +4,17 @@
     box-sizing: border-box;
 }
 .header{
-    height: 100px;
+    /* height: 100px; */
     width: 100%;
     
 }
 .all-margin-auto{
     width: 90%;
     margin: 0 auto;
+    margin-top: 10px;
 }
 .span-right{
-    margin-left: 32%;
+    margin-left: 27%;
 }
 .select-option-right{
     width: 24%;
@@ -32,8 +33,9 @@
     font-size: 19px;
     
 }
+
 .li-text-trangchu{
-    color: rgba(102,102,102,0.7);
+    color: rgba(102,102,102,0.7);   
    
 }
 .li-text-trangchu:hover{
