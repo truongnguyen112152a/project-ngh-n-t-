@@ -3,10 +3,16 @@
     margin: 0;
     box-sizing: border-box;
 }
+.a{
+    display: none;
+}
 .container{
     /* width: 90% !important; */
     /* height: auto; */
     max-width: 1230px !important;
+}
+.none-sm{
+    display: none;
 }
 .tetle{
     font-weight: bold;
@@ -110,12 +116,16 @@ p{
 }
 
 .input-ip{
-    border-radius: 5px 0 0 5px;
-    width: 350px;
+    border-radius: 5px;
+    width: 210px;
     height: 40px;
     border-style: none;
     outline: none;
     padding-left: 10px;
+}
+.aaa{
+    background: #f1f1f1;
+    border-radius: 5px;
 }
 .btn-btn{
     border-radius: 0 5px 5px 0;

@@ -854,6 +854,10 @@ progress {
 }
 
 @media (min-width: 576px) {
+  .none-none-none{
+    display: block;
+  }
+
   .col-sm {
     flex: 1 0 0%;
   }
@@ -1067,6 +1071,19 @@ progress {
   }
 }
 @media (min-width: 768px) {
+  .z{
+    display: block;
+  }
+  .none-none-none-md{
+    display: block;
+  }
+  .inpput-inpput-md{
+    width: 350px;
+  }
+  .col-md-md{
+    background: white;
+    border-radius: 5px;
+  }
   .col-md {
     flex: 1 0 0%;
   }
@@ -1280,6 +1297,23 @@ progress {
   }
 }
 @media (min-width: 992px) {
+  .c{
+    display: block;
+  }
+  .b{
+    display: block;
+  }
+  .inpput-inpput-lg{
+    width: 350px;
+  }
+  .none-none-none-lg{
+    display: block;
+  }
+  .col-lg-lg {
+    background: white;
+    border-radius: 5px;
+  }
+
   .col-lg {
     flex: 1 0 0%;
   }
