@@ -1519,7 +1519,9 @@ readers do not read off random characters that represent icons */
   content: "\f070"; }
 
 .fa-facebook:before {
-  content: "\f09a"; }
+  content: "\f09a";
+  color: blue; 
+}
 
 .fa-facebook-f:before {
   content: "\f39e"; }
@@ -2314,7 +2316,9 @@ readers do not read off random characters that represent icons */
   content: "\e080"; }
 
 .fa-instagram:before {
-  content: "\f16d"; }
+  content: "\f16d"; 
+color:white;
+}
 
 .fa-instagram-square:before {
   content: "\e055"; }
@@ -2500,10 +2504,13 @@ readers do not read off random characters that represent icons */
   content: "\f3c0"; }
 
 .fa-link:before {
-  content: "\f0c1"; }
+  content: "\f0c1"; 
+}
 
 .fa-linkedin:before {
-  content: "\f08c"; }
+  content: "\f08c"; 
+  color: #226c99;
+}
 
 .fa-linkedin-in:before {
   content: "\f0e1"; }
@@ -4129,7 +4136,8 @@ readers do not read off random characters that represent icons */
   content: "\f1e8"; }
 
 .fa-twitter:before {
-  content: "\f099"; }
+  content: "\f099"; 
+color: white;}
 
 .fa-twitter-square:before {
   content: "\f081"; }
@@ -4447,7 +4455,8 @@ readers do not read off random characters that represent icons */
   content: "\f40d"; }
 
 .fa-wifi:before {
-  content: "\f1eb"; }
+  content: "\f1eb"; 
+color: white;}
 
 .fa-wikipedia-w:before {
   content: "\f266"; }

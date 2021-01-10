@@ -1329,10 +1329,16 @@ progress {
     width: 8.3333333333%;
   }
 
+
   .col-lg-2 {
     flex: 0 0 auto;
     width: 16.6666666667%;
   }
+  .col-lg-22 {
+    flex: 0 0 auto;
+    width: 11%;
+  }
+
 
   .col-lg-3 {
     flex: 0 0 auto;
@@ -1383,7 +1389,6 @@ progress {
     flex: 0 0 auto;
     width: 91.6666666667%;
   }
-
   .col-lg-12 {
     flex: 0 0 auto;
     width: 100%;
@@ -3898,6 +3903,7 @@ textarea.form-control-lg {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  /* margin-top: 5px; */
 }
 .navbar-nav .nav-link {
   padding-right: 0;
@@ -7019,7 +7025,9 @@ textarea.form-control-lg {
 .pb-5 {
   padding-bottom: 3rem !important;
 }
-
+.pb-10{
+  padding-bottom: 6rem !important;
+}
 .ps-0 {
   padding-left: 0 !important;
 }
@@ -9001,7 +9009,9 @@ textarea.form-control-lg {
     margin-top: auto !important;
     margin-bottom: auto !important;
   }
-
+  .mt-lg-10 {
+    margin-top: 0px !important;
+  }
   .mt-lg-0 {
     margin-top: 0 !important;
   }
@@ -10714,5 +10724,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+
 
 /*# sourceMappingURL=bootstrap.css.map */
