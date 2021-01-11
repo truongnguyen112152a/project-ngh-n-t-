@@ -37,7 +37,7 @@
     }
 }
 .container{
-    margin: 0 auto;
+    max-width: 1200px;
 }
 .header{
     background: rgb(61, 61, 66);
@@ -61,7 +61,6 @@
     line-height: 60px;
 }
 .header-top,.header-center,.header-bottom{
-    padding: 0 5%;
     color: rgb(247, 244, 239);
 }
 .search-icon{
@@ -120,8 +119,12 @@ button:focus{
 .footer{
     background: rgb(61, 61, 66);
 }
-.footer-top,.footer-bottom{
-    padding: 50px 5%;
+.footer-top{
+    padding: 50px 0;
+    color: rgb(247, 244, 239);
+}
+.footer-bottom{
+    padding: 20px 0;
     color: rgb(247, 244, 239);
 }
 .footer-line-top{
@@ -168,7 +171,6 @@ button:focus{
 .product{
     display: flex;
     line-height: 30px;
-    margin-bottom: 20px;
 }
 .product div{
     margin-right: 20px;
