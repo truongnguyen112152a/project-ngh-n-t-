@@ -105,14 +105,12 @@ ul li {
     margin-bottom: 10px;
 }
 
-.col-md-9 {
+.leftpart {
     margin: 0 auto;
     height: auto;
 }
 
-.col {
-    width: 100%;
-}
+
 
 .image {
     position: relative;
@@ -263,7 +261,7 @@ ul li {
     border-right: none;
 }
 
-.fab {
+.iconblog {
     color: white;
     margin-right: 5px;
 }
