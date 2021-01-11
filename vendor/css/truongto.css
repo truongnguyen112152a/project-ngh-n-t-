@@ -53,7 +53,7 @@
 }
 .header-top,.header-center,.header-bottom{
     padding: 0 5%;
-    /* background: rgb(61, 61, 66); */
+    background: rgb(61, 61, 66);
     color: rgb(247, 244, 239);
 }
 .search-icon{
