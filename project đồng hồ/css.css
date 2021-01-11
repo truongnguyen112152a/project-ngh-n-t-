@@ -17,7 +17,7 @@
     margin-left: 27%;
 }
 .select-option-right{
-    width: 24%;
+    /* width: 24%; */
     height: 50px;
     font-size: 20px;
     padding-left:12px ;
@@ -42,22 +42,26 @@
     color:#111 ;
 }
 .menu-danhmuc{
-    width: 30%;
+    width: 25%;
     
 }
 .content-dongho{
     width: 70%;
+    justify-content:space-around ;
     /* border: 1px solid black; */
-    display: flex;
-    justify-content: space-around;
+    /* display: flex;
+    justify-content: space-around; */
 }
 .flex-menu-content{
+    width: 100%;
+    /* margin: 0 auto; */
     display: flex;
     margin-top: 40px;
+    justify-content: space-between;
 }
 .ul-danhmuc{
     list-style: none;
-    width: 80%;
+    /* width: 80%; */
     height: 300px;
     border: 1px solid #ddd;
     background-color: rgba(221, 221, 221, 0.1);
