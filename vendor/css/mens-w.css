@@ -100,7 +100,7 @@
     
     
 }
-.width-focus:focus{
+.icon-left:focus .width-focus{
      display: block;
 
 }
