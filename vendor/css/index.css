@@ -36,9 +36,9 @@
         justify-content: flex-end;
     }
 }
-.container{
+/* .container{
     max-width: 1200px;
-}
+} */
 .header{
     background: rgb(61, 61, 66);
 }
