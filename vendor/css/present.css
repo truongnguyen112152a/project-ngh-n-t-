@@ -3,16 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-.header-header{
-    background: rgb(61, 61, 66);
-}
-.header-top-top{
-    margin: 0 auto;
-    max-width: 1230px;
-    padding: 0 !important;
-    border: none !important;
-    /* background: black; */
-}
 .a{
     display: none;
 }
