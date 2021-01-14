@@ -311,4 +311,82 @@ p{
 @keyframes aaaa9 {
     from {left: 0px;opacity: 0;}
     to {left: 0px;opacity: 1;}
-}    
+} 
+
+
+
+
+@media only screen and (min-width: 768px){
+    .header-top,.header-bottom{
+        display: block !important;
+    }
+    .search{
+        display: block ;
+    }
+    .hide-heart{
+        display: block !important;
+    }
+    .logo{
+        text-align: center;
+    }
+    .product{
+        text-align: center;
+    }
+    .justify-icon,.justify-pro{
+        justify-content: center;
+    }
+    .icon-menu{
+        display: none !important;
+    }
+    .search{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .justify-icon{
+        justify-content: flex-end;
+    }
+    .text-end{
+        display:flex !important;
+        justify-content:flex-end !important;
+        align-items:center !important;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 500px){
+    .header-line-top,.header-line-bottom{
+        display: none;
+    }
+    .search{
+        display: none;
+    }
+    .hide-heart{
+        display: none;
+    }
+    .logo{
+        text-align: center;
+    }
+    .product{
+        text-align: center;
+    }
+    .justify-icon,.justify-pro{
+        justify-content: center;
+    }
+    .icon-menu{
+        display: none;
+    }
+    .search{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .justify-icon{
+        justify-content: flex-end;
+    }
+    .icon-menu{
+        display: block !important;
+    }
+}   
