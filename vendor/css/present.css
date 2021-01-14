@@ -256,7 +256,7 @@ p{
 }
 .animation-right-4{
     position: relative;
-    animation: aaaa4 2s;
+    animation: aaaa4 4s;
 }
 
 @keyframes aaaa4 {
@@ -265,7 +265,7 @@ p{
 }
 .animation-right-5{
     position: relative;
-    animation: aaaa5 3s;
+    animation: aaaa5 5s;
 }
 
 @keyframes aaaa5 {
@@ -274,7 +274,7 @@ p{
 }
 .animation-right-6{
     position: relative;
-    animation: aaaa6 4s;
+    animation: aaaa6 6s;
 }
 
 @keyframes aaaa6 {
