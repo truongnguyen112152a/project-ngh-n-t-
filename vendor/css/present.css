@@ -211,3 +211,73 @@ p{
         justify-content: flex-end !important;
     }
 }
+
+
+
+
+
+
+.animation-right{
+    position: relative;
+    animation: aaaa 2s;
+}
+
+@keyframes aaaa {
+  from {left: 50%;}
+  to {left: 0px ;}
+}
+
+.animation-right-1{
+    position: relative;
+    animation: aaaa1 2s;
+}
+
+@keyframes aaaa1 {
+  from {left: 50%; opacity: 0;}
+  to {left: 0px ; opacity: 1;}
+}
+.animation-right-2{
+    position: relative;
+    animation: aaaa2 3s;
+}
+
+@keyframes aaaa2 {
+  from {left: 50%;opacity: 0;}
+  to {left: 0px ;opacity: 1;}
+}
+.animation-right-3{
+    position: relative;
+    animation: aaaa3 4s;
+}
+
+@keyframes aaaa3 {
+  from {left: 50%; opacity: 0;}
+  to {left: 0px ;opacity: 1;}
+}
+.animation-right-4{
+    position: relative;
+    animation: aaaa4 2s;
+}
+
+@keyframes aaaa4 {
+  from {left: 50%;opacity: 0;}
+  to {left: 0px ;opacity: 1;}
+}
+.animation-right-5{
+    position: relative;
+    animation: aaaa5 3s;
+}
+
+@keyframes aaaa5 {
+  from {left: 50%;opacity: 0;}
+  to {left: 0px ;opacity: 1;}
+}
+.animation-right-6{
+    position: relative;
+    animation: aaaa6 4s;
+}
+
+@keyframes aaaa6 {
+  from {left: 50%;opacity: 0;}
+  to {left: 0px;opacity: 1;}
+}
