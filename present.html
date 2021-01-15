@@ -12,59 +12,97 @@
     <link rel="stylesheet" href="./vendor/css/index.css">
 </head>
 <body style="width:100%;">
-    <menu class="header" style="background:#000000;">
-        <div class="header-line-top">
+    <menu>
+        <div class="header" style="background: black;"> 
+            <div class="header-line-top">
+                <div class="container-lg">
+                    <div class="header-top">
+                        <div class="row">
+                            <div class="street col-md-9 fs-6">
+                                <i class="fas fa-map-marker mx-1"></i>
+                                214-C3 Nguyễn Xiển-Thanh Xuân-Hà Nội
+                                <i class="fas fa-phone-alt mx-1"></i>
+                                0988666688
+                            </div>
+                            <div class="icon col-md-3 text-end">
+                                <i class="fab fa-facebook-f mx-1"></i>
+                                <i class="fab fa-instagram mx-1"></i>
+                                <i class="fab fa-twitter mx-1"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="container-lg">
-                <div class="header-top">
+                <div class="header-center">
                     <div class="row">
-                        <div class="street col-md-9 fs-7">
-                            <i class="fas fa-map-marker mx-1"></i>
-                            319 C16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM
-                            <i class="fas fa-phone-alt mx-1"></i>
-                            0988666688
+                        <div class="icon-menu col-2 fs-3"><i class="fas fa-bars" id="menu-icon-bar"></i></div>
+                        <div class="logo col-8 col-md-3">
+                            <div>
+                                <img width="200" height="70"
+                                src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/logo-mona-2.png"
+                                class="header-logo-dark" alt="Đồng Hồ Hải Triều">
+                            </div>
                         </div>
-                        <div class="icon col-md-3 text-end">
-                            <i class="fab fa-facebook-f mx-1"></i>
-                            <i class="fab fa-instagram mx-1"></i>
-                            <i class="fab fa-twitter mx-1"></i>
+                        <div class="search col-md-6">
+                            <div class="search-icon">
+                                <input class="hide-heart" type="text" placeholder="Tìm kiếm...">
+                                <button class="hide-heart"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                        <div class="cart col-2 col-md-3 text-end  fs-3">
+                            <i class="far fa-heart mx-1 hide-heart"></i>
+                            <i class="fas fa-shopping-cart mx-1"></i>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container-lg">
-            <div class="header-center">
-                <div class="row">
-                    <div class="icon-menu col-2 fs-3"><i class="fas fa-bars"></i></div>
-                    <div class="logo col-8 col-md-3">
-                        <img width="200" height="70"
-                            src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/logo-mona-2.png"
-                            class="header-logo-dark" alt="Đồng Hồ Hải Triều">
-                    </div>
-                    <div class="search col-md-7">
-                        <div class="search-icon">
-                            <input class="width-search hide-heart" type="text" placeholder="Tìm kiếm...">
-                            <button style="background: #c2997d;" class="width-search hide-heart"><i class="fas fa-search"></i></button>
-                        </div>
-                    </div>
-                    <div class="cart col-2 col-md-2 text-end  fs-3">
-                        <i class="far fa-heart mx-1 hide-heart"></i>
-                        <i class="fas fa-shopping-cart mx-1"></i>
+            <div class="header-line-bottom">
+                <div class="container-lg">
+                    <div class="header-bottom">
+                        <ul>
+                            <li><a href="./index.html">Trang chủ</a></li>
+                            <li><a style="color: #c2997d ;" href="./present.html">Giới thiệu</a></li>
+                            <li><a href="./mens-watch.html">Đồng hồ nam</a></li>
+                            <li><a href="./blogs.html">Blog</a></li>
+                            <li><a href="./address.html">Liên hệ</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="header-line-bottom">
-            <div class="container-lg">
-                <div class="header-bottom">
-                    <ul>
-                        <li><a href="./index.html">Trang chủ</a></li>
-                        <li><a style="color: #c2997d;" href="./present.html">Giới thiệu</a></li>
-                        <li><a href="./mens-watch.html">Đồng hồ nam</a></li>
-                        <li><a href="./blogs.html">Blog</a></li>
-                        <li><a href="./address.html">Liên hệ</a></li>
-                    </ul>
+        <div class="block-menu" id="block-menu">
+            <div class="menu-fixed">
+                <div class="list-menu-fixed">
+                    <div class="list-menu">
+                        <ul>
+                            <li>
+                                <div class="search-menu">
+                                    <input class="border-0" style="padding-left: 5px; width: 80%;" type="text"
+                                        placeholder="Tìm kiếm">
+                                    <button style="width: 20%" class="bg-warning border-0"><i
+                                            class="fas fa-search"></i></button>
+                                </div>
+                            </li>
+                            <li><a href="./index.html">TRANG CHỦ</a></li>
+                            <li><a style="color:  #c2997d;" href="./present.html">GIỚI THIỆU</a></li>
+                            <li><a href="./mens-watch.html">ĐỒNG HỒ NAM</a></li>
+                            <li><a href="">ĐỒNG HỒ NỮ</a></li>
+                            <li><a href="./blogs.html">BLOGS</a></li>
+                            <li><a href="./address.html">LIÊN HỆ</a></li>
+                            <li><a href="">ĐĂNG NHẬP</a></li>
+                            <li>
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-twitter"></i>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+                <div class="background-button"></div>
+            </div>
+            <div class="button-x">
+                <button id="btn-x" style="width: 40px; height: 40px;"><i class="fas fa-times"></i></button>
             </div>
         </div>
     </menu>
@@ -343,11 +381,12 @@
     </footer>
 </body>
 <script src="./vendor/js/present.js"></script>
+<script src="./vendor/js/index.js"></script>
 </html>
 
 
 
-
+    
 
 
 
