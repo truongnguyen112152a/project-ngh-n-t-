@@ -13,6 +13,16 @@ main {
   margin: 0 100px;
 }
 
+@media only screen and (max-width: 550px){
+  .col-xs{
+    margin: 0 20px;
+  }
+}
+@media only screen and (max-width: 550px){
+  .col-mobile{
+    margin: 0px
+  }
+}
 .Demo {
   height: 100px;
 }
@@ -21,7 +31,7 @@ main {
   background-color: red;
   padding-top: 100px;
 } */
-.piClock1 {
+.carousel-item {
   position: relative;
   /* width: 100vh;
   height: 100vw; */
@@ -29,25 +39,21 @@ main {
 .imgSlider {
   width: 100%;
 }
+
 .title {
+  position: absolute !important;
+  width: 550px;
+  color: white;
+  top: 150px;
+  left: 200px;
+}
+/* .title2 {
   width: 550px;
   color: white;
   position: absolute;
   top: 150px;
   left: 200px;
-}
-.piClock2 {
-  position: relative;
-  /* width: 100vh;
-    height: 100vw; */
-}
-.title2 {
-  width: 550px;
-  color: white;
-  position: absolute;
-  top: 150px;
-  left: 200px;
-}
+} */
 h4 {
   font-size: 24px;
   margin: 15px 0;
@@ -122,6 +128,20 @@ a {
 .hr_card_body {
   margin: 0px;
 }
+
+@media only screen and (max-width: 550px){
+  .col-card_product{
+    display: none;
+  }
+  .col_product{
+    display: flex;
+  }
+  .col_display{
+    max-width: 50%;
+  }
+
+}
+
 .card_product {
   border: 1px solid rgba(0, 0, 0, 0.125);
   margin: 0 15px 30px;
