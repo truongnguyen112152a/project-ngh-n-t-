@@ -54,11 +54,18 @@
     .content-dongho{
         margin: 0 auto !important;
     }
+    .ul-flex{
+        padding-left: 8%;
+    }
+    .select-option-right{
+        text-align: center !important;
+    }
 }
 @media(max-width:970px){
     .new-post{
         display: none;
     }
+
 
 }
 .flex-menu-content{
