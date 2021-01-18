@@ -84,7 +84,7 @@
                     </div>
                     <div class="address">
                         <div class="address-title">
-                            <p style="font-weight: 900; font-size: 30px;">Địa chỉ:</p>
+                            <p class="address-title-name">Địa chỉ:</p>
                         </div>
                         <div class="address-info">
                             <p class="phone-number">319 C16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM</p>
@@ -99,13 +99,13 @@
                     </div>
                     <div class="address">
                         <div class="address-title">
-                            <p style="font-weight: 900; font-size: 30px;">Điện thoại:</p>
+                            <p class="address-title-name">Điện thoại:</p>
                         </div>
                         <div class="address-info">
                             <p class="phone-number">01234567890</p>
-                            <p><b class="phone-number">Bấm 113</b> – Phòng kinh doanh</p>
-                            <p><b class="phone-number">Bấm 114</b> – Phòng kỹ thuật</p>
-                            <p><b class="phone-number">Bấm 115</b> – Phòng bảo hành</p>
+                            <p class="phone-number"><b>Bấm 113</b> – Phòng kinh doanh</p>
+                            <p class="phone-number"><b>Bấm 114</b> – Phòng kỹ thuật</p>
+                            <p class="phone-number"><b>Bấm 115</b> – Phòng bảo hành</p>
                         </div>
                     </div>
                 </div>
@@ -117,7 +117,7 @@
                     </div>
                     <div class="address">
                         <div class="address-title">
-                            <p style="font-weight: 900; font-size: 30px;">Email:</p>
+                            <p class="address-title-name">Email:</p>
                         </div>
                         <div class="addres-info">
                             <a href="https://www.youtube.com/watch?v=dGUqeCaSgKY&ab_channel=Nh%E1%BA%ADtCh%C3%A0m" style="text-decoration: none;color: black;">
@@ -128,14 +128,23 @@
                 </div>
             </div>
             <div class="send">
-                <p><input type="text" id="name" placeholder="Họ và Tên(*)"> <input id="mail" type="text" placeholder="Email(*)(**)"></p>
-                <p class="text-name"></p>
-                <p><input type="text" id="address" placeholder="Địa chỉ(*)"> <input id="phone" type="text" placeholder="Số điện thoại(*)"></p>
-                <p>
-                    <textarea name="" id="message" cols="70" rows="5" placeholder="Lời nhắn(*)" "></textarea></p>
-                    <P><b>(*) Điền đầy đủ thông tin tại đây.</b></P>
-                    <P><b>(**) Email điền theo dạng abc@xyz.com.</b></P>
-                <button class=" button " onclick=" button();window.location.reload() ">Gửi</button>
+                <div class="send-input-address">
+                    <p class="input-address"><input type="text" id="name" placeholder="Họ và Tên(*)"></p>
+                    <p class="input-address"><input id="mail" type="text" placeholder="Email(*)"></p>
+                    <p class="input-address"><input type="text" id="address" placeholder="Địa chỉ(*)"> </p>
+                    <p class="input-address"><input id="phone" type="text" placeholder="Số điện thoại(*)"></p>
+
+                </div>
+                <div class="send-input-message">
+                    <textarea name="" id="message" cols="70" rows="5" placeholder="Lời nhắn(*)" "></textarea>
+                    
+                </div>
+                <div class="warning-address ">
+                    <p><b>(*) Vui lòng không bỏ trống tại đây.</b></p>
+                </div>
+                <div class="send-button ">
+                    <button class=" button " onclick=" button();window.location.reload() ">Gửi</button>
+                </div>
             </div>
         </div>
 
