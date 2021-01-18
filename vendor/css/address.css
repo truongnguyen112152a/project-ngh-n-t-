@@ -3,6 +3,10 @@
             padding: 0;
         }
         
+        .telephone {
+            display: none;
+        }
+        
         .container {
             width: 100%;
             height: auto;
@@ -176,6 +180,12 @@
                 display: flex;
                 flex-wrap: wrap;
             }
+            .telephone {
+                display: block;
+                position: fixed;
+                left: 10px;
+                bottom: 10px;
+            }
             .input-address {
                 width: 50%;
                 padding: 0 5px;
@@ -195,6 +205,12 @@
                 font-size: 16px;
             }
             @media (max-width:425px) {
+                .telephone {
+                    display: block;
+                    position: fixed;
+                    left: 10px;
+                    bottom: 10px;
+                }
                 .contact-address {
                     width: 100%;
                 }
