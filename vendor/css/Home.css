@@ -22,6 +22,9 @@ main {
   .col-mobile{
     margin: 0px
   }
+  .col_slider{
+    font-size: 11px !important;
+  }
 }
 .Demo {
   height: 100px;
@@ -31,50 +34,29 @@ main {
   background-color: red;
   padding-top: 100px;
 } */
-.carousel-item {
-  position: relative;
-  /* width: 100vh;
-  height: 100vw; */
+.carousel-caption{
+  text-align: left !important;
+  right: 50% !important;
+  /* bottom: 20% !important; */
+  top: 20% !important;
 }
-.imgSlider {
+/* .imgSlider {
   width: 100%;
-}
+} */
 
-.title {
+/* .title {
   position: absolute !important;
   width: 550px;
   color: white;
   top: 150px;
   left: 200px;
-}
-/* .title2 {
-  width: 550px;
-  color: white;
-  position: absolute;
-  top: 150px;
-  left: 200px;
 } */
-h4 {
-  font-size: 24px;
-  margin: 15px 0;
-}
-h1 {
-  font-size: 54px;
-  margin: 12px 0;
-}
-p {
-  font-size: 16px;
-  margin: 16px 0;
-}
-span {
+
+.lookProduct {
   color: white;
   padding: 10px 20px;
   font-size: 15px;
   text-decoration: none;
-}
-a {
-  text-decoration: none;
-  color: white;
 }
 .button {
   background: transparent;
