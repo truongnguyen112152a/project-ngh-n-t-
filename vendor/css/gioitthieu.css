@@ -216,7 +216,7 @@ p{
 
 
 
-.animation-right{
+.animation-right-{
     position: relative;
     animation: aaaa 2s;
 }
@@ -398,7 +398,7 @@ p{
     .icon-menu{
         display: block !important;
     }
-    .animation-right-{
+    .animation-right{
         position: relative;
         animation: aaaa 2s;
         position: static;
