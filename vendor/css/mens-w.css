@@ -4,19 +4,20 @@
     box-sizing: border-box;
 }
 .header{
-    height: 100px;
+    /* height: 100px; */
     width: 100%;
     
 }
 .all-margin-auto{
     width: 90%;
     margin: 0 auto;
+    margin-top: 10px;
 }
 .span-right{
-    margin-left: 32%;
+    margin-left: 27%;
 }
 .select-option-right{
-    width: 24%;
+    /* width: 24%; */
     height: 50px;
     font-size: 20px;
     padding-left:12px ;
@@ -32,30 +33,35 @@
     font-size: 19px;
     
 }
+
 .li-text-trangchu{
-    color: rgba(102,102,102,0.7);
+    color: rgba(102,102,102,0.7);   
    
 }
 .li-text-trangchu:hover{
     color:#111 ;
 }
 .menu-danhmuc{
-    width: 30%;
+    width: 25%;
     
 }
 .content-dongho{
     width: 70%;
+    justify-content:space-around ;
     /* border: 1px solid black; */
-    display: flex;
-    justify-content: space-around;
+    /* display: flex;
+    justify-content: space-around; */
 }
 .flex-menu-content{
+    width: 100%;
+    /* margin: 0 auto; */
     display: flex;
     margin-top: 40px;
+    justify-content: space-between;
 }
 .ul-danhmuc{
     list-style: none;
-    width: 80%;
+    /* width: 80%; */
     height: 300px;
     border: 1px solid #ddd;
     background-color: rgba(221, 221, 221, 0.1);
@@ -94,7 +100,7 @@
     
     
 }
-.width-focus:focus{
+.icon-left:focus .width-focus{
      display: block;
 
 }
