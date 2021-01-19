@@ -370,7 +370,7 @@ width: 100%;
   
 .fff{
 width: 100%;
-/* overflow-x: hidden; */
+overflow-x: auto;
 /* word-wrap:break-word; */
 display: flex;
 /* opacity: 1; */
