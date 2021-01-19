@@ -398,3 +398,14 @@ div:-webkit-scrollbar {
   display: block;
 
 }
+.fontAwesome-heart-1{
+  background-image: url("../image/product-02.jpg");
+  background-size: 100% 100%;
+  height: 280px;
+  width: 190px;
+}
+/* @media only screen and (max-width: 550px){
+  .col-col-3{
+      width: 20%;
+  }
+} */
