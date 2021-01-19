@@ -15,7 +15,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./vendor/fontawesome-free-5.15.1-web/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./vendor/css/index.css">
 </head>
 
@@ -31,7 +35,7 @@
                             <i class="fas fa-phone-alt mx-1"></i>
                             0988666688
                         </div>
-                        <div class="icon col-md-3 text-end">
+                        <div class="icon col-md-3 text-right">
                             <i class="fab fa-facebook-f mx-1"></i>
                             <i class="fab fa-instagram mx-1"></i>
                             <i class="fab fa-twitter mx-1"></i>
@@ -43,7 +47,7 @@
         <div class="container">
             <div class="header-center">
                 <div class="row">
-                    <div class="icon-menu col-2 fs-3"><i class="fas fa-bars"></i></div>
+                    <div class="icon-menu col-2 fs-3"><i class="fas fa-bars" id="menu-icon-bar"></i></div>
                     <div class="logo col-8 col-md-3">
                         <img width="200" height="70"
                             src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/logo-mona-2.png"
@@ -51,11 +55,11 @@
                     </div>
                     <div class="search col-md-6">
                         <div class="search-icon">
-                            <input class="width-search hide-heart" type="text" placeholder="Tìm kiếm...">
-                            <button class="width-search hide-heart"><i class="fas fa-search"></i></button>
+                            <input class="hide-heart" type="text" placeholder="Tìm kiếm...">
+                            <button class="hide-heart"><i class="fas fa-search"></i></button>
                         </div>
                     </div>
-                    <div class="cart col-2 col-md-3 text-end  fs-3">
+                    <div class="cart col-2 col-md-3 text-right  fs-3">
                         <i class="far fa-heart mx-1 hide-heart"></i>
                         <i class="fas fa-shopping-cart mx-1"></i>
                     </div>
@@ -69,204 +73,237 @@
                         <li><a href="./index.html">Trang chủ</a></li>
                         <li><a href="./present.html">Giới thiệu</a></li>
                         <li><a href="./mens-watch.html">Đồng hồ nam</a></li>
-                        <li><a style="color: #c2997d;" href="./blogs.html">Blog</a></li>
+                        <li><a href="./blogs.html"
+                                style="color:  rgb(189, 141, 52); text-decoration: underline;">Blog</a></li>
                         <li><a href="./address.html">Liên hệ</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row header-blogs" style="text-align: center;">
-            <div class="col padding-bot">
-                <span class="title-text">BLOGS</span>
+    <div class="block-menu" id="block-menu">
+        <div class="menu-fixed">
+            <div class="list-menu-fixed">
+                <div class="list-menu">
+                    <ul>
+                        <li>
+                            <div class="search-menu">
+                                <input class="border-0" style="padding-left: 5px; width: 80%;" type="text"
+                                    placeholder="Tìm kiếm">
+                                <button style="width: 20%" class="bg-warning border-0"><i
+                                        class="fas fa-search"></i></button>
+                            </div>
+                        </li>
+                        <li><a href="./index.html">TRANG CHỦ</a></li>
+                        <li><a href="./present.html">GIỚI THIỆU</a></li>
+                        <li><a href="./mens-watch.html">ĐỒNG HỒ NAM</a></li>
+                        <li><a href="">ĐỒNG HỒ NỮ</a></li>
+                        <li><a href="./blogs.html">BLOGS</a></li>
+                        <li><a href="./address.html">LIÊN HỆ</a></li>
+                        <li><a href="">ĐĂNG NHẬP</a></li>
+                        <li>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-twitter"></i>
+                        </li>
+                    </ul>
+                </div>
             </div>
+            <div class="background-button"></div>
         </div>
-        <div class="row main-content container">
-            <div class="  col col-md-3 side-bar row ">
-                <div class="  box-search  ">
-                    <div class="box-inp "><input type="text" class="search-inp   " placeholder="Tìm kiếm...">
-                    </div>
-                    <div class="submit-btn  ">
-                        <button type="submit" class="btn-search  "><i class="fas fa-search"></i></button>
-                    </div>
+        <div class="button-x">
+            <button id="btn-x" style="width: 40px; height: 40px;"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+    <div class="content-blog">
+        <div class="container">
+            <div class="row header-blogs" style="text-align: center;">
+                <div class="col-12 padding-bot">
+                    <span class="title-text">BLOGS</span>
                 </div>
-                <div class=" list-info  ">
-                    <P class="news-title">BÀI VIẾT MỚI</P>
-                    <div class="small-list row">
-                        <ul>
-                            <li>
-                                <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/new-4-150x150.jpg"
-                                    width="15%" alt="">
-                                <a href="./vendor/img/img1.jpg">Chiếc đồng hồ của những CEO...</a>
-                            </li>
-                            <li>
-                                <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/trend-2-150x150.jpg"
-                                    width="15%" alt="">
-                                <a href="#">12 chiếc đồng hồ dành cho nữ giới đắt giá nhất mọi...</a>
-                            </li>
-                            <li>
-                                <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/new-3-150x150.jpg"
-                                    width="15%" alt="">
-                                <a href="#">10 thương hiệu đồng hồ cao cấp hàng đầu mọi quý...</a>
-                            </li>
-                            <li>
-                                <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/photo-1-150x150.jpg"
-                                    width="15%" alt="">
-                                <a href="#">6 chiếc đồng hồ ấn tượng tại Oscar 2019: Từ những...</a>
-                            </li>
-                            <li>
-                                <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/news-1-150x150.jpg"
-                                    width="15%" alt="">
-                                <a href="#">Casio sẽ ra mắt đồng hồ thông minh thương hiệu...</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-
-
             </div>
-            <div class="col col-md-9 container">
-                <div class="row line-top margin-0" style="margin:0 auto;">
-                    <div class="col col-md-4 image ">
-                        <div class="box-parent">
-                            <div class="img1 bg-cover">
-                                <img src="./vendor/img/img1.jpg" alt="">
-                            </div>
-                            <div class="text-box">
-                                <div class="text-in">
-                                    <a href="content1.html">Chiếc đồng hồ của những CEO quyền lực nhất thế giới</a>
-                                    <div class="divider max-width-30px"></div>
-                                    <p class="take-from-blog">Đối với một số doanh nhân, một chiếc đồng hồ đeo tay không
-                                        chỉ
-                                        là ...</p>
-                                </div>
-                            </div>
-                            <div class="date-radious">
-                                <div class="date-in">
-                                    <span class="date-day">05</span><br>
-                                    <span class="date-month">Th7</span>
-                                </div>
-                            </div>
+            <div class="row main-content">
+                <div class="col-12 col-md-3 side-bar mb-4">
+                    <div class="  box-search  ">
+                        <div class="box-inp "><input type="text" class="search-inp   " placeholder="Tìm kiếm...">
+                        </div>
+                        <div class="submit-btn  ">
+                            <button type="submit" class="btn-search  "><i class="fas fa-search"></i></button>
                         </div>
                     </div>
-                    <div class="col  col-md-4 image ">
-                        <div class="box-parent">
-                            <div class="img1 bg-cover">
-                                <img src="./vendor/img/img2.jpg" alt="">
-                            </div>
-                            <div class="text-box">
-                                <div class="text-in">
-                                    <a href="#">12 chiếc đồng hồ dành cho nữ giới đắt giá nhất...</a>
-                                    <div class="divider max-width-30px"></div>
-                                    <p class="take-from-blog">Công nghiệp sản xuất đồng hồ sang trọng có dấu hiệu chững lại...</p>
-                                </div>
-                            </div>
-                            <div class="date-radious">
-                                <div class="date-in">
-                                    <span class="date-day">05</span><br>
-                                    <span class="date-month">Th7</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        
-
-                    </div>
-                    <div class="col col-md-4 image ">
-                        <div class="box-parent">
-                            <div class="img1 bg-cover">
-                                <img src="./vendor/img/img3.jpg" alt="">
-                            </div>
-                            <div class="text-box">
-                                <div class="text-in">
-                                    <a href="#">10 thương hiệu đồng hồ cao cấp hàng đầu mọi quý ông...</a>
-                                    <div class="divider max-width-30px"></div>
-                                    <p class="take-from-blog">1. Audemars Piguet Được thành lập vào năm 1875 bởi
-                                        Jules-Louis...</p>
-                                </div>
-                            </div>
-                            <div class="date-radious">
-                                <div class="date-in">
-                                    <span class="date-day">05</span><br>
-                                    <span class="date-month">Th7</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-
-                    </div>
-                </div>
-                <div class="row line-bottom margin-0 " style="margin:0 auto;">
-                    <div class="col col-md-4  image ">
-                        <div class="box-parent">
-                            <div class="img1 bg-cover">
-                                <img src="./vendor/img/img4.jpg" alt="">
-                            </div>
-                            <div class="text-box">
-                                <div class="text-in">
+                    <div class=" list-info  ">
+                        <P class="news-title">BÀI VIẾT MỚI</P>
+                        <div class="small-list">
+                            <ul>
+                                <li>
+                                    <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/new-4-150x150.jpg"
+                                        width="40px" height="40px" alt="">
+                                    <a href="./vendor/img/img1.jpg">Chiếc đồng hồ của những CEO...</a>
+                                </li>
+                                <li>
+                                    <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/trend-2-150x150.jpg"
+                                        width="40px" height="40px" alt="">
+                                    <a href="#">12 chiếc đồng hồ dành cho nữ giới đắt giá nhất mọi...</a>
+                                </li>
+                                <li>
+                                    <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/new-3-150x150.jpg"
+                                        width="40px" height="40px" alt="">
+                                    <a href="#">10 thương hiệu đồng hồ cao cấp hàng đầu mọi quý...</a>
+                                </li>
+                                <li>
+                                    <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/photo-1-150x150.jpg"
+                                        width="40px" height="40px" alt="">
                                     <a href="#">6 chiếc đồng hồ ấn tượng tại Oscar 2019: Từ những...</a>
-                                    <div class="divider max-width-30px"></div>
-                                    <p class="take-from-blog">Bên cạnh những Cartier, IWC và Jaeger-LeCoultre, có nhiều
-                                        chiếc đồng hồ...</p>
-                                </div>
-                            </div>
-                            <div class="date-radious">
-                                <div class="date-in">
-                                    <span class="date-day">05</span><br>
-                                    <span class="date-month">Th7</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="col  col-md-4 image ">
-                        <div class="box-parent">
-                            <div class="img1 bg-cover">
-                                <img src="./vendor/img/img5.jpg" alt="">
-                            </div>
-                            <div class="text-box">
-                                <div class="text-in">
+                                </li>
+                                <li>
+                                    <img src="http://mauweb.monamedia.net/donghohaitrieu/wp-content/uploads/2019/07/news-1-150x150.jpg"
+                                        width="40px" height="40px" alt="">
                                     <a href="#">Casio sẽ ra mắt đồng hồ thông minh thương hiệu...</a>
-                                    <div class="divider max-width-30px"></div>
-                                    <p class="take-from-blog">Có tin Casio dự định trình làng smartwatch G-Shock trong vòng
-                                        2 năm tới...</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-9">
+                    <div class="row line-top margin-0">
+                        <div class="col-12 col-md-4 image ">
+                            <div class="box-parent">
+                                <div class="img1 bg-cover">
+                                    <img src="./vendor/img/img1.jpg" alt="">
                                 </div>
-                            </div>
-                            <div class="date-radious">
-                                <div class="date-in">
-                                    <span class="date-day">05</span><br>
-                                    <span class="date-month">Th7</span>
+                                <div class="text-box">
+                                    <div class="text-in">
+                                        <a href="content1.html">Chiếc đồng hồ của những CEO quyền lực nhất thế giới</a>
+                                        <div class="divider max-width-30px"></div>
+                                        <p class="take-from-blog">Đối với một số doanh nhân, một chiếc đồng hồ đeo tay
+                                            không
+                                            chỉ
+                                            là ...</p>
+                                    </div>
+                                </div>
+                                <div class="date-radious">
+                                    <div class="date-in">
+                                        <span class="date-day">05</span><br>
+                                        <span class="date-month">Th7</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        
-
+                        <div class="col-12 col-md-4 image ">
+                            <div class="box-parent">
+                                <div class="img1 bg-cover">
+                                    <img src="./vendor/img/img2.jpg" alt="">
+                                </div>
+                                <div class="text-box">
+                                    <div class="text-in">
+                                        <a href="#">12 chiếc đồng hồ dành cho nữ giới đắt giá nhất...</a>
+                                        <div class="divider max-width-30px"></div>
+                                        <p class="take-from-blog">Công nghiệp sản xuất đồng hồ sang trọng có dấu
+                                            hiệuCông nghiệp sản xuất đồng hồ sang trọng có dấu hiệu
+                                            chững lại...</p>
+                                    </div>
+                                </div>
+                                <div class="date-radious">
+                                    <div class="date-in">
+                                        <span class="date-day">05</span><br>
+                                        <span class="date-month">Th7</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 image ">
+                            <div class="box-parent">
+                                <div class="img1 bg-cover">
+                                    <img src="./vendor/img/img3.jpg" alt="">
+                                </div>
+                                <div class="text-box">
+                                    <div class="text-in">
+                                        <a href="#">10 thương hiệu đồng hồ cao cấp hàng đầu mọi quý ông...</a>
+                                        <div class="divider max-width-30px"></div>
+                                        <p class="take-from-blog">1. Audemars Piguet Được Công nghiệp sản xuất đồng hồ
+                                            sang trọng có dấu hiệu thành lập vào năm 1875 bởi
+                                            Jules-Louis...</p>
+                                    </div>
+                                </div>
+                                <div class="date-radious">
+                                    <div class="date-in">
+                                        <span class="date-day">05</span><br>
+                                        <span class="date-month">Th7</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="row line-bottom margin-0 " style="margin:0 auto;">
+                        <div class="col-12 col-md-4  image ">
+                            <div class="box-parent">
+                                <div class="img1 bg-cover">
+                                    <img src="./vendor/img/img4.jpg" alt="">
+                                </div>
+                                <div class="text-box">
+                                    <div class="text-in">
+                                        <a href="#">6 chiếc đồng hồ ấn tượng tại Oscar 2019: Từ những...</a>
+                                        <div class="divider max-width-30px"></div>
+                                        <p class="take-from-blog">Công nghiệp sản xuất đồng hồ sang trọng có dấu hiệuBên
+                                            cạnh những Cartier, IWC và Jaeger-LeCoultre, có
+                                            nhiều
+                                            chiếc đồng hồ...</p>
+                                    </div>
+                                </div>
+                                <div class="date-radious">
+                                    <div class="date-in">
+                                        <span class="date-day">05</span><br>
+                                        <span class="date-month">Th7</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 image ">
+                            <div class="box-parent">
+                                <div class="img1 bg-cover">
+                                    <img src="./vendor/img/img5.jpg" alt="">
+                                </div>
+                                <div class="text-box">
+                                    <div class="text-in">
+                                        <a href="#">Casio sẽ ra mắt đồng hồ thông minh thương hiệu...</a>
+                                        <div class="divider max-width-30px"></div>
+                                        <p class="take-from-blog">Công nghiệp sản xuất đồng hồ sang trọng có dấu hiệuCó
+                                            tin Casio dự định trình làng smartwatch G-Shock
+                                            trong vòng
+                                            2 năm tới...</p>
+                                    </div>
+                                </div>
+                                <div class="date-radious">
+                                    <div class="date-in">
+                                        <span class="date-day">05</span><br>
+                                        <span class="date-month">Th7</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 my-5 border-top">
+                    <div class="row mt-5">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <h2 class="mb-55" style="font-size: 1.6rem; font-weight: bold;">ĐĂNG KÝ NHẬN THÔNG TIN</h2>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="btn-input">
+                                <!-- <div class="btn-input-2"> -->
 
+                                <input id="idIP" class="input " type="email" name="" id="" placeholder="Email..">
+
+
+                                <button id="btn-btn" class="btn-about">ĐĂNG KÝ</button>
+                            </div>
+                            <!-- </div> -->
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="my-5 border-top">
-            <div class="row mt-5" >
-                 <div class="col-lg-6 col-md-6 col-sm-12"> 
-                     <h2 style="font-size: 1.6rem; font-weight: bold;">ĐĂNG KÝ NHẬN THÔNG TIN</h2>
-                 </div>
-                 <div class="col-lg-6 col-md-6 col-sm-12">
-                     <div class="btn-input">
-                         <!-- <div class="btn-input-2"> -->
-                             <div>
-                                 <input class="input" type="email" name="" id="" placeholder="Email..">
-                             </div>
-                             <div>
-                                <button class="btn-about">ĐĂNG KÝ</button>
-                             </div>
-                         <!-- </div> -->
-                     </div>
-                 </div>
-            </div>
-         </div>
+
     </div>
     <div class="footer">
         <div class="footer-line-top">
@@ -354,5 +391,7 @@
         </div>
     </div>
 </body>
+<script src="./vendor/js/index.js"></script>
+<script src="./vendor/js/present.js"></script>
 
 </html>

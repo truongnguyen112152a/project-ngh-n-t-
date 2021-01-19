@@ -38,8 +38,9 @@
     background-position:center ;
     background-size:cover ;
     background-repeat: no-repeat; 
-    position: relative;
+    /* position: relative; */
     margin: 60px 0;
+    
 }
 .py-5{
     height: 280px;
@@ -63,7 +64,7 @@ p{
     /* transform: transform(50% 50% ) ; */
     display: flex;
     /* flex-direction: row-reverse; */
-    justify-content: flex-end
+    justify-content: flex-end;
 
     
 }
@@ -215,8 +216,6 @@ p{
 
 
 
-
-
 .animation-right{
     position: relative;
     animation: aaaa 2s;
@@ -248,6 +247,7 @@ p{
 .animation-right-3{
     position: relative;
     animation: aaaa3 4s;
+    
 }
 
 @keyframes aaaa3 {
@@ -257,6 +257,7 @@ p{
 .animation-right-4{
     position: relative;
     animation: aaaa4 4s;
+    
 }
 
 @keyframes aaaa4 {
@@ -266,15 +267,18 @@ p{
 .animation-right-5{
     position: relative;
     animation: aaaa5 5s;
+    
 }
 
 @keyframes aaaa5 {
   from {left: 50%;opacity: 0;}
   to {left: 0px ;opacity: 1;}
+  
 }
 .animation-right-6{
     position: relative;
     animation: aaaa6 6s;
+    
 }
 
 @keyframes aaaa6 {
@@ -288,6 +292,7 @@ p{
     position: relative;
     animation: aaaa7 9s;
     
+    
 }
 @keyframes aaaa7 {
     from {left: 0px;opacity: 0;}
@@ -297,15 +302,18 @@ p{
 .f2{
     position: relative;
     animation: aaaa8 11s;
+   
     
 }
 @keyframes aaaa8 {
     from {left: 0px;opacity: 0;}
     to {left: 0px;opacity: 1;}
+
 }    
 .f3{
     position: relative;
     animation: aaaa9 15s;
+   
     
 }
 @keyframes aaaa9 {
@@ -316,7 +324,7 @@ p{
 
 
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 767.98px){
     .header-top,.header-bottom{
         display: block !important;
     }
@@ -351,12 +359,13 @@ p{
         justify-content:flex-end !important;
         align-items:center !important;
     }
+    
 }
 
 
 
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 767.89px){
     .header-line-top,.header-line-bottom{
         display: none;
     }
@@ -389,6 +398,121 @@ p{
     .icon-menu{
         display: block !important;
     }
+    .animation-right{
+        position: relative;
+        animation: aaaa 2s;
+        position: static;
+    }
+    
+    @keyframes aaaa {
+      from {left: 50%;}
+      to {left: 0px ;}
+    }
+    
+    .animation-right-1{
+        position: relative;
+        animation: aaaa1 2s;
+        position: static;
+    }
+    
+    
+    @keyframes aaaa1 {
+      from {left: 50%; opacity: 0;}
+      to {left: 0px ; opacity: 1;}
+    }
+    .animation-right-2{
+        position: relative;
+        animation: aaaa2 3s;
+        position: static;
+    }
+    
+    @keyframes aaaa2 {
+      from {left: 50%;opacity: 0;}
+      to {left: 0px ;opacity: 1;}
+    }
+    .animation-right-3{
+        position: relative;
+        animation: aaaa3 4s;
+        position: static;
+        
+    }
+    
+    @keyframes aaaa3 {
+      from {left: 50%; opacity: 0;}
+      to {left: 0px ;opacity: 1;}
+    }
+    .animation-right-4{
+        position: relative;
+        animation: aaaa4 4s;
+        position: static;
+        
+    }
+    
+    @keyframes aaaa4 {
+      from {left: 50%;opacity: 0;}
+      to {left: 0px ;opacity: 1;}
+    }
+    .animation-right-5{
+        position: relative;
+        animation: aaaa5 5s;
+        position: static;
+        
+    }
+    
+    @keyframes aaaa5 {
+      from {left: 50%;opacity: 0;}
+      to {left: 0px ;opacity: 1;}
+      
+    }
+    .animation-right-6{
+        position: relative;
+        animation: aaaa6 6s;
+        position: static;
+        
+    }
+    
+    @keyframes aaaa6 {
+      from {left: 50%;opacity: 0;}
+      to {left: 0px;opacity: 1;}
+    }
+    
+    
+    
+    .f1{
+        position: relative;
+        animation: aaaa7 9s;
+        position: static;
+        
+        
+    }
+    @keyframes aaaa7 {
+        from {left: 0px;opacity: 0;}
+        to {left: 0px;opacity: 1;}
+    }    
+    
+    .f2{
+        position: relative;
+        animation: aaaa8 11s;
+        position: static;
+       
+        
+    }
+    @keyframes aaaa8 {
+        from {left: 0px;opacity: 0;}
+        to {left: 0px;opacity: 1;}
+    
+    }    
+    .f3{
+        position: relative;
+        animation: aaaa9 15s;
+        position: static;
+       
+        
+    }
+    @keyframes aaaa9 {
+        from {left: 0px;opacity: 0;}
+        to {left: 0px;opacity: 1;}
+    } 
 }   
 
 
