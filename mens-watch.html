@@ -12,6 +12,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./vendor/fontawesome-free-5.15.1-web/css/all.min.css">
     <link rel="stylesheet" href="./vendor/css/index.css">
+    <link rel="stylesheet" href="./vendor/css/present.css">
 </head>
 <body>
     <div class="header">
@@ -70,17 +71,55 @@
             </div>
         </div>
     </div>
+    <div class="block-menu" id="block-menu">
+        <div class="menu-fixed">
+            <div class="list-menu-fixed">
+                <div class="list-menu">
+                    <ul>
+                        <li>
+                            <div class="search-menu">
+                                <input class="border-0" style="padding-left: 5px; width: 80%;" type="text"
+                                    placeholder="Tìm kiếm">
+                                <button style="width: 20%" class="bg-warning border-0"><i
+                                        class="fas fa-search"></i></button>
+                            </div>
+                        </li>
+                        <li><a href="">TRANG CHỦ</a></li>
+                        <li><a href="">GIỚI THIỆU</a></li>
+                        <li><a href="">ĐỒNG HỒ NAM</a></li>
+                        <li><a href="">ĐỒNG HỒ NỮ</a></li>
+                        <li><a href="">BLOGS</a></li>
+                        <li><a href="">LIÊN HỆ</a></li>
+                        <li><a href="">ĐĂNG NHẬP</a></li>
+                        <li>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-twitter"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="background-button"></div>
+        </div>
+        <div class="button-x">
+            <button id="btn-x" style="width: 40px; height: 40px;"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
       <!-- header -->
     <div class="container-fluid">
      <div class="all-margin-auto">
       <div class="header-text-dongho ">
         <ul class="ul-flex ">
-           <li class="li-text-trangchu ">TRANG CHỦ</li>
+           <li class="li-text-trangchu "><a href=""></a> TRANG CHỦ</li>
            <li>/</li>
            <li class="text-men-w ">ĐỒNG HỒ NAM</li>
            <li class="d-none d-sm-none .d-md-block d-lg-block span-right ">Hiển thị một kết quả duy nhất</li>
            
         </ul> 
+        <div class="center-sau">
+            <i id="click-icon" class="fas fa-align-justify"></i>
+            <b>LỌC</b>
+        </div>
         <select name="" id="" class="select-option-right ">
             <option value="">thứ tự mặc định</option>
             <option value="">thứ tự theo mức độ phổ biến</option>
@@ -91,16 +130,16 @@
        </div> 
           
         <div class="  flex-menu-content ">
-            <div class="d-none d-sm-none d-md-block d-lg-block menu-danhmuc ">
+            <div  id="saucontent"    class="d-block d-sm-none d-md-block d-lg-block menu-danhmuc ">
                 <b class="">DANH MỤC SẢN PHẨM</b>
                 <ul class="ul-danhmuc Automatic">
                     <li class="li-text-demo">DEMO</li>
                     <li class="li-text-demo">DEMO</li>
                     <div class="li-text-demo product">
                         <p>SẢN PHẨM</p>
-                        <button class="icon-left" ><i class="fas fa-angle-down "></i></button>
+                        <button class="icon-left" id="click-btton" ><i class="fas fa-angle-down" id="anmenu"></i></button>
                     </div>
-                    <div class="width-focus">
+                    <div class="width-focus " id="sau-focus">
                         <p class="text-male-Female">Đồng hồ nam</p>
                         <p class="text-male-Female">Đồng hồ nữ</p> 
                     </div>
@@ -147,7 +186,7 @@
                 <ul  class="ul-danhmuc new-post">
                     <li>
                         <img src="./vendor/project đồng hồ/imager/img-con-tron.jpg" alt="" >
-                        <p>chiếc đồng hồ của những CEO quyền lực nhất thế giới</p>
+                        <p class="">chiếc đồng hồ của những CEO quyền lực nhất thế giới</p>
                     </li>
                     <li>
                         <img src="./vendor/project đồng hồ/imager/img-bv-2.jpg" alt="" >
@@ -167,6 +206,7 @@
                     </li>
                 </ul>
             </div>
+            <button id="hide-danhmuc" class="text-node-p">x</button>
            
             <div class="row content-dongho ">
                 <div class="div-clasico col-sm-6 col-md-6 col-lg-3">
@@ -311,5 +351,7 @@
             </div>
         </div>
     </div>
+    <script src="./vendor/js/index.js"></script>
 </body>
+<script src="./vendor/js/mens-w.js"></script>
 </html>

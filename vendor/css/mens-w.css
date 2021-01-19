@@ -43,6 +43,7 @@
 }
 .menu-danhmuc{
     width: 25%;
+    /* z-index: 1; */
     
 }
 .content-dongho{
@@ -55,18 +56,61 @@
         margin: 0 auto !important;
     }
     .ul-flex{
+        
         padding-left: 8%;
+        margin-bottom: 0;
+
     }
     .select-option-right{
         text-align: center !important;
     }
+    .center-sau{
+        text-align: center;
+       display: block !important;
+      
+      
+    }
+    .menu-danhmuc{
+       /* display: block !important; */
+       position: fixed;
+       top:0;
+       left: 0;
+       width: 60%;
+    background-color: rgba(255,255,255,0.95);
+    height: 100%;
+   
+    overflow: auto;
+    }
+    .new-post{
+        display: block !important;
+    }
+    .new-post p{
+        overflow: hidden;
+    }
+    .width-focus{
+        width: 87% !important;
+        height: 100px !important;
+    }
+    .text-node-p{
+       position: fixed !important;
+       top: 0 !important;
+       right: 0 !important;
+       /* background-color:rgba(221, 221, 221, 0.1); */
+       display: block !important;
+       width: 25px;
+    font-size: 30px;
+    text-align: center;
+    }
 }
-@media(max-width:970px){
+@media( max-width:970px){
     .new-post{
         display: none;
     }
 
 
+}
+.center-sau{
+    display: none;
 }
 .flex-menu-content{
     width: 100%;
@@ -74,11 +118,12 @@
     display: flex;
     margin-top: 40px;
     justify-content: space-between;
+   
 }
 .ul-danhmuc{
     list-style: none;
     /* width: 80%; */
-    height: 300px;
+    height: 315px;
     border: 1px solid #ddd;
     background-color: rgba(221, 221, 221, 0.1);
     padding-left:15px ;
@@ -105,17 +150,18 @@
 }
 .icon-left{
     margin-left: 55%;
-   /* position: relative; */
+   position: relative;
    height: 20px;
     line-height: 18px;
     border: none;
 
 }
 .width-focus{
-    width: 90%;
+    width: 19%;
     border: 1px solid #ddd;
-    height: 80px;
+    height: 120px;
     display: none;
+    position:absolute;
     
     
 }
@@ -145,17 +191,21 @@
 }
 .new-post img{
     border-radius:50% ;
-    border: 1px solid black;
+   
     width: 50px;
     height: 50px;
 }
 .new-post p{
     padding-left:15px ;
     margin-bottom: 0;
+    overflow: hidden;
 }
 .new-post li{
     padding-top: 5px;
     margin-bottom:0 !important ;
+}
+.text-node-p{
+   display: none;
 }
 .div-clasico{
     height: 360px;
