@@ -116,7 +116,7 @@ body {
 }
 
 .image {
-    position: relative;
+    /* position: relative; */
     margin-bottom: 20px;
 }
 
@@ -184,7 +184,7 @@ body {
     border-radius: 50%;
     text-align: center;
     background-color: #c89979;
-    ;
+
 }
 
 .date-month {
