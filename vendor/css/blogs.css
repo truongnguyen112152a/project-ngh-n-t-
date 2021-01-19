@@ -61,6 +61,7 @@ body {
 }
 .small-list ul{
     margin: 0 !important;
+    padding: 0 !important;
 }
 .small-list li {
     list-style: none;
