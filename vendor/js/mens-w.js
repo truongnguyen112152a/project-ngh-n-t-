@@ -5,10 +5,10 @@ var blockdanhmuc = document.getElementById('click-icon')
 var saudanhmuc = document.getElementById('saucontent')
 var hidedanhmuc = document.getElementById('hide-danhmuc')
 
-buttonicon.addEventListener('click',function(){
-    saumenufocus.classList.add('hide-menu')
-    console.log("hello")
-})
+// buttonicon.addEventListener('click',function(){
+//     saumenufocus.classList.add('hide-menu')
+//     console.log("hello")
+// })
 
 // var bienclick=document.getElementById("click-icon")
 // var saumenuicon=document.getElementById("saucontent")
@@ -26,29 +26,11 @@ hidedanhmuc.addEventListener('click', function () {
 
 
 
-// var blockdanhmuc=
-// document.getElementById("hide-danhmuc").onclick = function () {
-//     document.getElementById("saucontent").style.display = 'none';
-//     console.log("hiện")
-// };
-
-// document.getElementById("click-icon").onclick = function () {
-//     document.getElementById("saucontent").style.display = 'block';
-// };
-
-
-// var blockdanhmuc = document.getElementById('click-icon')
-// var saudanhmuc = document.getElementById('block-menu')
-// var hidedanhmuc = document.getElementById('hide-danhmuc')
-// hidedanhmuc.addEventListener('click', function () {
-//     saudanhmuc.classList.remove('hide-menu')
-//     console.log('hello')
-// })
-
-// blockdanhmuc.addEventListener('click', function () {
-//     saudanhmuc.classList.add('hide-menu')
-//     console.log("xxx")
-// })
+$(document).ready(function(){
+    $("#click-btton").click(function(){
+        $("#sau-focus").toggle(2000);
+    })
+})
 
 
 
