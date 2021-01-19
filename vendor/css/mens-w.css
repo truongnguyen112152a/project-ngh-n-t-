@@ -71,13 +71,15 @@
       
     }
     .menu-danhmuc{
-       /* display: block !important; */
+      
        position: fixed;
        top:0;
        left: 0;
        width: 60%;
     background-color: rgba(255,255,255,0.95);
     height: 100%;
+    display: none;
+    z-index: 999999;
    
     overflow: auto;
     }
@@ -100,6 +102,8 @@
        width: 25px;
     font-size: 30px;
     text-align: center;
+    border: none;
+    background-color: transparent;
     }
 }
 @media( max-width:970px){
