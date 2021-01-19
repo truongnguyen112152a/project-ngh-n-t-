@@ -251,7 +251,10 @@ body {
     border-top: 1px dotted #7e7e7e;
 }
 
-
+.mb-55{
+    margin-bottom: 1.5rem !important;
+    text-align: center !important;
+}
 
 
 
