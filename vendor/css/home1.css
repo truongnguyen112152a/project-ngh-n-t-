@@ -357,8 +357,27 @@
     max-height: 350px;
     border-radius: 15px;
 }
+.aao{
+  margin-right: 2rem;
+}
 
-
+.img-img-img{
+  width: 190px;
+}
 .img-img{
-    width: 100%;
+  width: 100%;
+}
+    
+.fff{
+  width: 100%;
+  overflow-x: auto;
+  word-wrap:break-word;
+  display: flex;
+  /* opacity: 1; */
+}
+div:-webkit-scrollbar {
+  display: none;
+}
+.border-border-border{
+  border: 1px dotted rgb(180, 155, 155);
 }
