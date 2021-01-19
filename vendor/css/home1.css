@@ -379,5 +379,23 @@ div:-webkit-scrollbar {
   display: none;
 }
 .border-border-border{
+  
   border: 1px dotted rgb(180, 155, 155);
+}
+.fontAwesome-heart{
+  background-image: url('../image/product-02.jpg');
+  background-size: 100% 100%;
+  height: 220px;
+  width: 190px;
+}
+.hover-heart{
+  display: flex;
+  justify-content: flex-end;
+  font-size: 50px;
+  color: red;
+  display: none;
+}
+.border-border-border:hover .hover-heart{
+  display: block;
+
 }
