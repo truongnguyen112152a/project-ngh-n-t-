@@ -96,3 +96,23 @@ function animateValue(id, start, end, duration) {
 }
 
 animateValue("id25", 1, 25, 2300);
+
+
+
+
+
+var btn_btn =document.getElementById("btn-btn") 
+
+btn_btn.addEventListener('click',function(){
+  var idIP = document.getElementById("idIP")
+  // console.log("dđ");
+  // console.log(typeof idIP.value);
+  if(idIP.value.includes('@')){
+    // console.log("sssss");
+    alert("Đăng Nhập Thành Công")
+  }else{
+    alert("Hãy Nhập Thông Tin")
+    // console.log("ddđ");
+  }
+})
+
