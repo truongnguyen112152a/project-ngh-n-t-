@@ -1,117 +1,228 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    box-sizing: border-box;
-    padding: 0px 50px;
-}
-
-.map {
-    width: 100%;
-    margin: 40px 0;
-}
-
-.contact {
-    width: 100%;
-    height: auto;
-    display: flex;
-}
-
-.contact-address {
-    width: 100%;
-    height: auto;
-    display: flex;
-    padding: 10px 0;
-}
-
-.phone-number:hover {
-    color: saddlebrown;
-    cursor: pointer;
-}
-
-.send {
-    width: 100%;
-    height: auto;
-    padding: 30px 0;
-    text-align: center;
-}
-
-p {
-    margin: 10px 0;
-}
-
-input {
-    width: 25%;
-    font-size: 20px;
-    height: 30px;
-    background-color: lightgrey;
-    border: none;
-}
-
-textarea {
-    width: 50%;
-    font-size: 20px;
-    background-color: lightgrey;
-    border: none;
-}
-
-.button {
-    width: 50%;
-    background-color: lightcoral;
-    color: whitesmoke;
-    font-size: 24px;
-    border: none;
-    margin: 10px 0;
-    border-radius: 5px;
-}
-
-.button:hover {
-    background-color: sandybrown;
-    cursor: pointer;
-}
-
-@media (max-width: 1200px) {
-    .contact {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .contact-address {
-        width: 50%;
-    }
-    p {
-        margin: 0;
-    }
-    input {
-        width: 60%;
-        margin: 10px 0;
-    }
-    textarea {
-        margin: 10px auto;
-        width: 60%;
-    }
-}
-
-@media (max-width: 768px) {
-    .contact {
-        flex-direction: column;
-    }
-    .contact-address {
-        width: 70%;
-    }
-    p {
-        margin: 0;
-    }
-    input {
-        width: 100%;
-        margin: 10px 0;
-    }
-    textarea {
-        margin: 10px auto;
-        width: 100%;
-    }
-}
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .telephone {
+            display: none;
+        }
+        
+        .container {
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            box-sizing: border-box;
+            padding: 0px 50px;
+        }
+        
+        .map {
+            width: 100%;
+            margin: 40px 0;
+        }
+        
+        .contact {
+            width: 100%;
+            height: auto;
+            display: flex;
+        }
+        
+        .contact-address {
+            width: 100%;
+            height: auto;
+            display: flex;
+            padding: 10px 0;
+        }
+        
+        .address-title-name {
+            font-weight: 900;
+            font-size: 30px;
+        }
+        
+        .phone-number {
+            width: 80%;
+        }
+        
+        .phone-number:hover {
+            color: saddlebrown;
+            cursor: pointer;
+        }
+        
+        .send {
+            width: 100%;
+            height: auto;
+            padding: 30px 0;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+        }
+        
+        .send-input-address {
+            width: 90%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .input-address {
+            width: 40%;
+            font-size: 20px;
+            height: 30px;
+            border: none;
+        }
+        
+        .input-address input {
+            width: 95%;
+            font-size: 20px;
+            background-color: lightgrey;
+            border: none;
+            border-radius: 5px;
+        }
+        
+        .send-input-message {
+            width: 90%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .send-input-message textarea {
+            width: 75%;
+            font-size: 20px;
+            background-color: lightgrey;
+            border: none;
+            border-radius: 5px;
+        }
+        
+        .warning-address {
+            padding-top: 15px;
+        }
+        
+        .send-button {
+            width: 95%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+        }
+        
+        .button {
+            width: 50%;
+            background-color: lightcoral;
+            color: whitesmoke;
+            font-size: 24px;
+            border: none;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        
+        .button:hover {
+            background-color: sandybrown;
+            cursor: pointer;
+        }
+        
+        @media (max-width: 1024px) {
+            .contact {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .contact-address {
+                width: 50%;
+            }
+            .send {
+                width: 100%;
+            }
+            .send-input-address {
+                width: 100%;
+            }
+            .send-input-message {
+                width: 80%;
+            }
+            .send-input-message {
+                width: 100%;
+            }
+            .input-address input {
+                width: 95%;
+                font-size: 15px;
+                padding: 10px 0;
+            }
+            .send-button {
+                width: 100%;
+            }
+            .button {
+                width: 80%;
+            }
+            .warning-address {
+                font-size: 15px;
+                justify-self: start;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .contact {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .contact-address {
+                width: 45%;
+            }
+            .input-address {
+                width: 100%;
+                margin: 10px 0;
+            }
+            .send-input-address {
+                font-size: 14px;
+                padding: 10px 0;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .telephone {
+                display: block;
+                position: fixed;
+                left: 10px;
+                bottom: 10px;
+            }
+            .input-address {
+                width: 50%;
+                padding: 0 5px;
+            }
+            .input-address input {
+                width: 100%;
+            }
+            .send-input-message textarea {
+                margin: 10px auto;
+                width: 100%;
+                font-size: 15px;
+            }
+            .address-title p {
+                font-size: 14px;
+            }
+            .phone-number {
+                font-size: 16px;
+            }
+            @media (max-width:425px) {
+                .telephone {
+                    display: block;
+                    position: fixed;
+                    left: 10px;
+                    bottom: 10px;
+                }
+                .contact-address {
+                    width: 100%;
+                }
+                .phone-number {
+                    font-size: 13px;
+                }
+                .input-address {
+                    width: 99%;
+                    padding: 0 5px;
+                }
+                .warning-address {
+                    font-size: 10px;
+                }
+            }
+        }
