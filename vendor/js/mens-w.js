@@ -4,6 +4,7 @@ var saumenufocus=document.getElementById("sau-focus")
 var blockdanhmuc = document.getElementById('click-icon')
 var saudanhmuc = document.getElementById('saucontent')
 var hidedanhmuc = document.getElementById('hide-danhmuc')
+var openmenu = document.getElementById('open-menu')
 
 // buttonicon.addEventListener('click',function(){
 //     saumenufocus.classList.add('hide-menu')
@@ -22,6 +23,10 @@ blockdanhmuc.addEventListener('click', function () {
 hidedanhmuc.addEventListener('click', function () {
     saudanhmuc.classList.remove('hide-menu')
     console.log('hello')
+})
+openmenu.addEventListener('click', function () {
+    saudanhmuc.classList.remove('hide-menu')
+    console.log('hihihi')
 })
 
 

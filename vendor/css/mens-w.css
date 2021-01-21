@@ -276,3 +276,12 @@
     bottom: 0;
 }
 
+.open-menu{
+    background: black;
+    position: fixed;
+    width: 40%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    opacity: 0.8;
+}
