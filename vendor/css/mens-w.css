@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .header{
     /* height: 100px; */
     width: 100%;
@@ -31,7 +32,7 @@
     height: 50px;
     line-height: 50px;
     font-size: 19px;
-    
+    padding: 0;
 }
 
 .li-text-trangchu{
@@ -52,14 +53,23 @@
     
 }
 @media only screen and (max-width:768px){
+    .justify-icon{
+        justify-content: center !important;
+    }
+    .contac-mens{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .content-men-watchs{
+        justify-content: center !important;
+    }
     .content-dongho{
         margin: 0 auto !important;
     }
     .ul-flex{
-        
-        padding-left: 8%;
         margin-bottom: 0;
-
+        justify-content: center;
     }
     .select-option-right{
         text-align: center !important;
@@ -104,6 +114,13 @@
     text-align: center;
     border: none;
     background-color: transparent;
+    }
+    .header-text-dongho{
+        justify-content: center !important;
+    }
+    .block-select{
+        display: flex;
+        justify-content: center;
     }
 }
 @media( max-width:970px){
@@ -258,5 +275,4 @@
     position: absolute;
     bottom: 0;
 }
-
 

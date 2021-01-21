@@ -25,12 +25,9 @@ hidedanhmuc.addEventListener('click', function () {
 })
 
 
-
 $(document).ready(function(){
     $("#click-btton").click(function(){
         $("#sau-focus").toggle(2000);
     })
 })
-
-
 
