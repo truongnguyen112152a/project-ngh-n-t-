@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .header{
     /* height: 100px; */
     width: 100%;
@@ -21,7 +22,7 @@
     height: 50px;
     font-size: 20px;
     padding-left:12px ;
-    margin-left: 4%;
+    /* margin-left: 4%; */
     box-shadow: inset 0 -1.4em 1em 0 rgba(0,0,0,0.02);
     border:inset 0 -1.4em 1em 0 rgba(0,0,0,0.02) ;
 }
@@ -31,7 +32,7 @@
     height: 50px;
     line-height: 50px;
     font-size: 19px;
-    
+    padding: 0;
 }
 
 .li-text-trangchu{
@@ -43,14 +44,102 @@
 }
 .menu-danhmuc{
     width: 25%;
+    /* z-index: 1; */
     
 }
 .content-dongho{
     width: 70%;
     justify-content:space-around ;
-    /* border: 1px solid black; */
-    /* display: flex;
-    justify-content: space-around; */
+    
+}
+@media only screen and (max-width:768px){
+    .open-menu{
+        background: black;
+        position: fixed;
+        width: 40%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        opacity: 0.8;
+    }
+    .justify-icon{
+        justify-content: center !important;
+    }
+    .contac-mens{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .content-men-watchs{
+        justify-content: center !important;
+    }
+    .content-dongho{
+        margin: 0 auto !important;
+    }
+    .ul-flex{
+        margin-bottom: 0;
+        justify-content: center;
+    }
+    .select-option-right{
+        text-align: center !important;
+    }
+    .center-sau{
+        text-align: center;
+       display: block !important;
+      
+      
+    }
+    .menu-danhmuc{
+      
+       position: fixed;
+       top:0;
+       left: 0;
+       width: 60%;
+    background-color: rgba(255,255,255,0.95);
+    height: 100%;
+    display: none;
+    z-index: 999999;
+   
+    overflow: auto;
+    }
+    .new-post{
+        display: block !important;
+    }
+    .new-post p{
+        overflow: hidden;
+    }
+    .width-focus{
+        width: 87% !important;
+        height: 100px !important;
+    }
+    .text-node-p{
+       position: fixed !important;
+       top: 0 !important;
+       right: 0 !important;
+       /* background-color:rgba(221, 221, 221, 0.1); */
+       display: block !important;
+       width: 25px;
+    font-size: 30px;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    }
+    .header-text-dongho{
+        justify-content: center !important;
+    }
+    .block-select{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media( max-width:970px){
+    .new-post{
+        display: none;
+    }
+
+}
+.center-sau{
+    display: none;
 }
 .flex-menu-content{
     width: 100%;
@@ -58,16 +147,17 @@
     display: flex;
     margin-top: 40px;
     justify-content: space-between;
+   
 }
 .ul-danhmuc{
     list-style: none;
     /* width: 80%; */
-    height: 300px;
+    height: 315px;
     border: 1px solid #ddd;
     background-color: rgba(221, 221, 221, 0.1);
     padding-left:15px ;
     margin-top:20px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 .li-text-demo{
     border-top: 1px dashed #ececec;
@@ -90,19 +180,24 @@
 .icon-left{
     margin-left: 55%;
    position: relative;
+   height: 20px;
+    line-height: 18px;
+    border: none;
 
 }
 .width-focus{
-    width: 90%;
+    width: 19%;
     border: 1px solid #ddd;
-    height: 80px;
+    height: 19%;
     display: none;
+    position:absolute;
     
     
 }
-.icon-left:focus .width-focus{
-     display: block;
-
+.icon-left:focus{
+    
+     border: block;
+     border:1px solid brown;
 }
 .text-male-Female{
   
@@ -125,15 +220,25 @@
 }
 .new-post img{
     border-radius:50% ;
-    border: 1px solid black;
+   
     width: 50px;
+    height: 50px;
 }
 .new-post p{
     padding-left:15px ;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+.new-post li{
+    padding-top: 5px;
+    margin-bottom:0 !important ;
+}
+.text-node-p{
+   display: none;
 }
 .div-clasico{
     height: 360px;
-    width:23% ;
+    width:30% ;
     box-shadow: 0 1px 3px -2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 .text-center-dh{
@@ -178,5 +283,3 @@
     position: absolute;
     bottom: 0;
 }
-
-

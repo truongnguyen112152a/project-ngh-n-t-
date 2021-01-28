@@ -2,14 +2,14 @@
     margin: 0;
     padding: 0;
 }
-
+/* 
 .container {
     width: 100%;
     height: auto;
     margin: 0 auto;
     box-sizing: border-box;
     padding: 0px 50px;
-}
+} */
 
 .map {
     width: 100%;
@@ -41,11 +41,11 @@
     text-align: center;
 }
 
-p {
+.address-info p {
     margin: 10px 0;
 }
 
-input {
+.send input {
     width: 25%;
     font-size: 20px;
     height: 30px;
@@ -83,10 +83,10 @@ textarea {
     .contact-address {
         width: 50%;
     }
-    p {
+    .address-info p {
         margin: 0;
     }
-    input {
+    .send input {
         width: 60%;
         margin: 10px 0;
     }
@@ -103,10 +103,10 @@ textarea {
     .contact-address {
         width: 70%;
     }
-    p {
+    .address-info p {
         margin: 0;
     }
-    input {
+    .send input {
         width: 100%;
         margin: 10px 0;
     }

@@ -48,9 +48,6 @@
 .number{
     font-weight: bold;
 }
-p{
-    color: #7e7e7e;
-}
 
 .btn-input{
     /* font-weight: bold; */
@@ -75,7 +72,7 @@ p{
     border-radius: 5px; 
 }
 .input{
-    /* width: 50px; */
+    width: 100%;
     /* max-width: 450px; */
     border: none !important;
     background: #f1f1f1 !important;
@@ -186,9 +183,9 @@ p{
         justify-content: center !important;
         margin:0 !important;
     }
-    .input{
+    /* .input{
         width: 250px !important; 
-    }
+    } */
     .p-t-4{
         padding-top: 1.5rem !important;
         padding-bottom: 1.5rem !important;
@@ -340,9 +337,9 @@ p{
     .product{
         text-align: center;
     }
-    .justify-icon,.justify-pro{
+    /* .justify-icon,.justify-pro{
         justify-content: center;
-    }
+    } */
     .icon-menu{
         display: none !important;
     }
@@ -387,11 +384,11 @@ p{
     .icon-menu{
         display: none;
     }
-    .search{
+    /* .search{
         display: flex;
         align-items: center;
         justify-content: center;
-    }
+    } */
     .justify-icon{
         justify-content: flex-end;
     }
