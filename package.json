@@ -1,0 +1,23 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "main": "sever.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon sever.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/truongnguyen112152a/project-onemillon-dollars.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/truongnguyen112152a/project-onemillon-dollars/issues"
+  },
+  "homepage": "https://github.com/truongnguyen112152a/project-onemillon-dollars#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
